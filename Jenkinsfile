@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  options { timestamps(); ansiColor('xterm'); }
+  options { timestamps(); }
   triggers { pollSCM('H/5 * * * *') }
 
   stages {
