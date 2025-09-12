@@ -1,7 +1,7 @@
 pipeline {
   agent any
   options { timestamps(); }
-  triggers { pollSCM('H/5 * * * *') }
+  triggers { pollSCM('H/1 * * * *') }
 
   stages {
     stage('Build') {
